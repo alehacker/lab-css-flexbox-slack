@@ -23,14 +23,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0 auto;
+
 }
 
-body {
-    width: 98vw;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
 .btn {
     background: #fff;
     border: none;
@@ -128,6 +125,7 @@ nav{
 
 header{
     display: flex;
+    flex-direction: column;
     justify-content: column;
     align-items: center;
     flex-wrap: wrap;
@@ -293,7 +291,10 @@ main {
     /* height: 90%; */
     padding: 20px 25px;
     /* margin-bottom: 35px; */
-    
+}
+
+.connect-box .connect-box-ipad{
+    display: none;
 }
 
 .section-two-text{
@@ -343,6 +344,9 @@ main {
     padding: 20px;
     margin-bottom: 15px;
 }
+.flexibility-ipad{
+    display: none;
+}
 
 .section-three-text{
     /* width: 30vw;
@@ -385,7 +389,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 85vh;
+    height: 75vh;
     background-color: #F3EAE2;
 
 }
@@ -393,6 +397,10 @@ main {
     width: 95vw;
     padding: 20px;
     margin-bottom: 15px;
+}
+
+.speed .speed-ipad{
+    display: none;
 }
 
 .section-four-text{
@@ -612,590 +620,178 @@ main {
 } */
 
 /* Iteration 2 | Small Screens (width > 768px and width < 1024px) */
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
-    }
-    
-    html{
-        font-size: 10px;
-    }
-    
-    body {
-        width: 98vw;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    .btn {
-        background: #fff;
-        border: none;
-        border-radius: 4px;
-        color: #540B51;
-        font-weight: bold;
-        padding: 10px 15px;
-        text-transform: uppercase;
-    }
-    
-    /* Nav Bar */
-    /* nav{
-        background-color: #540B51;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    
-    .slack-logo {
-        padding: 5px;
-        width: 150px;
-    }
-    
-    /* Nav Left-Div */
-    /* .left-div {
-        display: flex;
-        justify-content: space-evenly;
-        width: 30vw;
-        align-items: center;
-    
-    }
-    .nav-list {
-        display: none;
-        list-style: none;
-        align-items: center;
-    }
-    .nav-list li {
-        display: inline;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 10px;
-    }
-    .nav-list li a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    /* Nav Right-Div */
-    /* .right-div{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .right-div ul {
-        display: none;
-        /*align-items: center;
-        display: flex;
-        list-style: none;
-        justify-content: space-between; */
-    /* }
-    .right-div ul li {
-        padding: 0 20px;
-    }
-    
-    .right-div ul li a {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    
-     .right-div ul .hamburger {
-        display: none;
-    } 
-    .right-div-buttons {
-        background: none;
-        border: none;
-        padding: 0 20px;
-    }
-    
-    .right-div .search{
-     background: none;
-    
-    }
-    
-    .right-div .right-div-buttons .hamburger{
-        background: none;
-    } 
-     */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     
     
-    /*header*/
-    
-    /* header{
-        display: flex;
+    /* Header */
+    header{
+        background-image: url("../images/background-singup.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-flow: row wrap;
+        /* display: flex; */
         flex-direction: row;
-        justify-content: column;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #540B51;
-        height: 750px;
+        /* align-items: center;
+        justify-content: flex-start; */
+        color: white;
+        padding-bottom: 10%;
     }
-    
+
     .header-left{
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     
-    }
-    
-    .header-left > h1{
-        font-size: 4rem;
-        text-align: center;
-        color: white;
-        margin-bottom: 90px;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        flex: 1 0 50%;
         
-    
-    }
-    
-    .header-left  p{
-        font-size: 2rem;
-        margin-bottom: 25px;
-        
-        color: white;
-    
     }
     .header-right{
-        display: flex;
+        /* display: flex;
         align-items: center;
         margin-top: 25px;
-        width: 100vw;
+        width: 100vw; */
+        flex: 1 0 50%;
         
     }
-    .header-right > img{
-        display: flex;
-        justify-content: space-evenly;
-        width: 95vw;
-    
-    }
-     span{
-        color:#ECB12F;
-     }
-    
-     .header-buttons{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border:none;
-        border-radius: 6px;
-        
-     }*/
-    
-    /* .sign-email{ */
-        /* flex: 1 0 0; 
-        width: 98vw;
-        text-align: center;
-        font-size: 2rem;
-        color: #540B51;
-        background: #fff;
-        border: none;
-        border-radius: 4px;
-        font-weight: bold;
-        padding: 10px 15px;
-        text-transform: uppercase;
-    }
-    
-    .sign-google{
-        display: flex;
-        background-color: #4285F4;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 20px 15px 32px;
-        border-radius: 6px;
-        width: 98vw;
-        font-size: 2rem;
-    }
-    
-    .sign-google > img{
-        background-color: white;
-        margin-left: -25px;
-        margin-right: 20px;
-        padding: 8px;
-        max-width: 5vw;  
-        height: auto; 
-        border-radius: 6px; 
-    }
-    
-    .sign-google > p{
-        display: flex;
-        color: white;
-        align-content: center;
-        justify-content: center;
-        font-size: 4rem;
-    }
-    
-    /* Main */
-    
-    /* main {
-        background-color: #F3EAE2;
-        padding: 10px;
-       padding-bottom: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
-    
+
     /* section 1 */
-    /* .section-one {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        height: 20vh;
-        background-color: #F3EAE2;
-        padding: 10px 10px;
+
+
+
+    /* section 2 */
+    .section-two{
+        height: 55vh;
+        
     }
-    
-    .section-one > p {
-       font-weight: 500;
-       font-size: 1.5rem;
-       margin-bottom: 30px;
-       text-align: center;
+
+    .connect-box img{
+       display: none;
     }
-    
-    .section-one > div {
-        display: flex;
-        justify-content: center;
-        width: 100vw;   
-    }
-    
-    .section-one > div > img {
-        display: flex;
-        justify-content: space-evenly;
-        height: 3.0vh;
-    }
-    .section-one .logo-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 auto;
-        width: 60vw;
-        gap: 12px 20px ;
-    }  */
-    
-    /*section 2 */
-    /* .section-two {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 75vh;
-        background-color: #F3EAE2;
-    } */
-    
-    /* .connect-box img{
+    .connect-box .connect-box-ipad{
+        display: block;
         width: 95vw;
-        height: 90%;
-        padding: 20px 25px;
-        margin-bottom: 35px; 
-        
-    }*/
-    
-    /* .section-two-text{
-        width: 98vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 25px 15px;
+        padding: 0px 25px 15px 25px;
+    }
+
+    .section-two-text{
+       padding: 0px;
+       
         
     }
     
-    .section-two-text h2{
-        font-size: 3rem;
-        font-weight: 700;
+    /*  section 3 */
+    .section-three{
+        height: 55vh;
+        
     }
-    
-    .section-two-text p{
-        margin: 15px 10px;
-        line-height: 18px;
-        font-size: 1.2rem;
-    }
-    
-    .section-two-text a{
-        text-decoration: none;
-    }
-    
-    .section-two-text span{
-        font-size: 1.2rem;
-        color: #4285F4
-    } */
-    
-    
-    
-    /* section three */
-    /* .section-three{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 75vh;
-        background-color: #F3EAE2;
-    }
-    
+
     .flexibility img{
+        display: none;
+    }
+
+    .flexibility .flexibility-ipad{
+        display: block;
         width: 95vw;
-        padding: 20px;
-        margin-bottom: 15px;
-    } */
-    
-    /* .section-three-text{
-        width: 98vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 25px 15px;
-    
+        padding: 10px 25px 0px 20px;
     }
-    .section-three h2{
-        font-size: 3rem;
-        font-weight: 700;
-    } */
-    
-    /* .section-three p{
-        margin: 15px 10px;
-        line-height: 18px;
-        font-size: 1.2rem;
-    }
-    
-    .section-three-text span{
-        font-size: 1.2rem;
-        color: #4285F4
-    }
-    
-    .section-three-text a{
-        text-decoration: none;
-    } */
-    
-    
-    
-    
-    /* section four */
-    /* .section-four{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 85vh;
-        background-color: #F3EAE2;
-    
+
+    .section-three-text{
+        padding: 0px;
+     }
+
+
+    /* Section 4 */
+
+    .section-four{
+        height: 55vh;
+        padding-top: 25px;
+        
     }
     .speed img{
+        display: none;
+    }
+
+    .speed .speed-ipad{
+        display: block;
         width: 95vw;
-        padding: 20px;
-        margin-bottom: 15px;
+        padding: 0px 25px 0px 25px;
     }
-    
     .section-four-text{
-        width: 98vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 25px 15px;
-    }
-    
-    .section-four-text h2{
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    
-    .section-four-text p{
-        margin: 15px 10px;
-        line-height: 18px;
-        font-size: 1.2rem;
-    }
-    
-    .section-four-text span{
-        font-size: 1.2rem;
-        color: #4285F4
-    }
-    
-    .section-four-text a{
-        text-decoration: none;
-    }
-     */
-    
-    
-    
-    
-    /* section five */
-    
-    /* .section-five{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 98vw;
-        background-color: white;
-        gap: 10px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        
-    }
-    
-    .section-five h3{
-        font-size: 2.5rem;
-    }
-    
-    .section-five p{
-        font-size: 1.8rem;
-        text-align: center;
+        padding: 0px;
+     }
+
+    /* Section 5 */
+    .section-five{
+        padding: 65px;
     }
     .section-five-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px 10px;
-    } */
-    
-    /* .section-five-box .btn-one{
-        background: #540B51;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        font-weight: bold;
-        padding: 15px 25px;
-        text-transform: uppercase;
-        width: 98vw;
-    
-    
+        flex-direction: row;
     }
-    
+    .section-five-box .btn-one{
+        width: 40vw;
+
+    }
+
     .section-five-box .btn-two{
-        background: white;
-        border-color: #540B51;
-        color: #540B51;
-        padding: 15px 75px;
-        border-radius: 4px;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 98vw;
-    
-    
+        width: 40vw;
+        border-width: 1px;
+
     }
-    
+
     .section-five-list{
-        list-style: none;
+        width: 98vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 35px;
+        margin-left: 25px;
     }
-    
-    .section-five-list li{
-        width: 50vw;
-    }
-    
-    .section-five-list li p span{
-        font-size: 4rem;
-        color: #540B51;
-    }
-    
+
     .section-five-list  p{
         font-size: 1.2rem;
         font-weight: bold;
-    } */
-    
-    /*Section 6 */
-    /* .section-six{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #540B51;
-        gap: 10px 5px;
-    }
-    
-    .section-six h3{
-        font-size: 3rem;
-        color: white;
-        text-align: center;
-    }
-    
-    .section-six-btn-one{
-        background: #540B51;
-        color: #fff;
-        border-color: white;
-        border-radius: 4px;
-        font-weight: bold;
-        padding: 15px 25px;
-        text-transform: uppercase;
-        width: 98vw;
-    }
-    
-    .section-six-btn-two{
-        background: white;
-        border-color: #540B51;
-        color: #540B51;
-        padding: 15px 75px;
-        border-radius: 4px;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 98vw;
-        margin:  10px;
-    } */
-    
-    
-    /* Footer */
-    
-    /* .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
-    }
-    .slack-logo-footer{
-        padding: 25px;
-        width: 60px;
-    }
-    
-    .footer-list{
-        display: flex;
-        align-items: flex-start;
-        padding: 10px;
-        list-style: none;
-        flex-flow: column wrap;
-        gap: 10px;
-    }
-    
-    .footer-list-items{
-        flex-direction: column;
-    
-    }
-    
-    .footer .footer-list span{
-        color: black;
-        font-weight: bold;
-    
-    }
-    
-    .footer-second-list{
-        font-weight: bold;
-        padding: 10px;
-        list-style: none;
-    }
-    
-    .footer-second-list > li{
-        padding: 10px;
-    }
-    
-    .footer-logos-list{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none;
-        padding: 15px;
-        width: 50vh;
-    }
-    
-    .small-letters{
-        font-size: 1.2rem;
-        padding-bottom: 10px;
-    
-        margin-bottom: 10px;
+        text-align: left;
     }
 
-  } */
+    /* Footer */
+    footer{
+        height: 75vh;
+    }
+
+    .footer-second-list{
+        display: flex;
+        justify-content: space-between;
+        /* font-weight: bold;
+        padding: 10px;
+        list-style: none; */
+    }
+
+    .footer-logos-list{
+        justify-content: flex-start;
+        width: 60vh;
+        gap: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+
+
+
+   
+
+   
+
+}
 
 /* Iteration 3 | Medium Screens (width > 1024px and width < 1440px) */
 /* @media (min-width > 1024px) and (max-width < 1440px) {
